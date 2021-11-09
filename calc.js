@@ -11,6 +11,7 @@ reader.question("What would you like to calculate?", function(input){
 	mathSymbol = tokens[0];
 	num1 = Number(tokens[1]);
 	num2 = Number(tokens[2]);
+	num3 = Number(tokens[3]);
 
 	// console.log("mathSymbol", mathSymbol);
 	// console.log("num1", num1);
@@ -19,20 +20,40 @@ reader.question("What would you like to calculate?", function(input){
 	let answer;
 	switch (mathSymbol){
 		case "+" :
-			answer = num1 + num2;
-			console.log(`${num1} + ${num2} = ${answer}`);
+			if(!num3){
+				answer = num1 + num2;
+				console.log(`${num1} + ${num2} = ${answer}`)
+			} else {
+				answer = num1 + num2 + num3;
+				console.log(`${num1} + ${num2} + ${num3} = ${answer}`);
+			}
 			break
 		case "-" :
-			answer = num1 - num2;
-			console.log(`${num1} - ${num2} = ${answer}`);
+			if(!num3){
+				answer = num1 - num2;
+				console.log(`${num1} - ${num2} = ${answer}`)
+			} else {
+				answer = num1 - num2 - num3;
+				console.log(`${num1} - ${num2} - ${num3} = ${answer}`);
+			}
 			break
 		case "*" :
-			answer = num1 * num2;
-			console.log(`${num1} * ${num2} = ${answer}`);
+			if(!num3){
+				answer = num1 * num2;
+				console.log(`${num1} * ${num2} = ${answer}`)
+			} else {
+				answer = num1 * num2 * num3;
+				console.log(`${num1} * ${num2} * ${num3} = ${answer}`);
+			}
 			break
 		case "/" :
-			answer = num1 / num2;
-			console.log(`${num1} / ${num2} = ${answer}`);
+			if(!num3){
+				answer = num1 / num2;
+				console.log(`${num1} / ${num2} = ${answer}`)
+			} else {
+				answer = num1 / num2 / num3;
+				console.log(`${num1} / ${num2} / ${num3} = ${answer}`);
+			}
 			break
 		case "sqrt" :
 			answer = Math.sqrt(num1);

@@ -12,9 +12,9 @@ reader.question("What would you like to calculate?", function(input){
 	num1 = Number(tokens[1]);
 	num2 = Number(tokens[2]);
 
-	console.log("mathSymbol", mathSymbol);
-	console.log("num1", num1);
-	console.log("num2", num2);
+	// console.log("mathSymbol", mathSymbol);
+	// console.log("num1", num1);
+	// console.log("num2", num2);
 
 	let answer;
 	switch (mathSymbol){

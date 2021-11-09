@@ -18,6 +18,26 @@ reader.question("What would you like to calculate?", function(input){
 	console.log("num1", num1);
 	console.log("num2", num2);
 
+	let answer;
+	switch (mathSymbol){
+		case "+" :
+			answer = num1 + num2;
+			console.log(`${num1} + ${num2} = ${answer}`);
+			break
+		case "-" :
+			answer = num1 - num2;
+			console.log(`${num1} - ${num2} = ${answer}`);
+			break
+		case "*" :
+			answer = num1 * num2;
+			console.log(`${num1} * ${num2} = ${answer}`);
+			break
+		case "/" :
+			answer = num1 / num2;
+			console.log(`${num1} / ${num2} = ${answer}`);
+			break
+	}
+
 
 	// This line closes the connection to the command line interface.
 	reader.close()

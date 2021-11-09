@@ -34,7 +34,7 @@ reader.question("What would you like to calculate?", function(input){
 			answer = num1 / num2;
 			console.log(`${num1} / ${num2} = ${answer}`);
 			break
-		case "sq" :
+		case "sqrt" :
 			answer = Math.sqrt(num1);
 			console.log(`The Square Root of ${num1} is ${answer}`)
 			break

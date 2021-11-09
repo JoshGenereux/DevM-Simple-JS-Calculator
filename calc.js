@@ -38,6 +38,22 @@ reader.question("What would you like to calculate?", function(input){
 			answer = Math.sqrt(num1);
 			console.log(`The Square Root of ${num1} is ${answer}`)
 			break
+		case "sqr" :
+			answer = num1 * num1;
+			console.log(`The square of ${num1} is ${answer}`)
+			break
+		case "^3" :
+			answer = Math.pow(num1, 3);
+			console.log(`${num1}^3 = ${answer}`)
+			break
+		case "^" :
+			answer = Math.pow(num1, num2);
+			console.log(`${num1}^${num2} = ${answer}`)
+			break
+		case "%" :
+			answer = num1 % num2;
+			console.log(`${num1} % ${num2} = ${answer}`)
+			break
 	}
 	// This line closes the connection to the command line interface.
 	reader.close()

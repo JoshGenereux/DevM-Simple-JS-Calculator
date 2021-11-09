@@ -5,8 +5,6 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-
-
 reader.question("What would you like to calculate?", function(input){
 	tokens = input.split(' ');
 	
@@ -41,10 +39,7 @@ reader.question("What would you like to calculate?", function(input){
 			console.log(`The Square Root of ${num1} is ${answer}`)
 			break
 	}
-
-
 	// This line closes the connection to the command line interface.
 	reader.close()
-
 });
 
